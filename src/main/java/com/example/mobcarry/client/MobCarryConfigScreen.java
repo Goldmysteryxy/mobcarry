@@ -22,7 +22,7 @@ public class MobCarryConfigScreen extends Screen {
     @Override
     protected void init() {
         MobCarryConfig c = MobCarryConfig.get();
-        this.addRenderableWidget(new StringWidget(0, 15, this.width, 9, this.title, this.font).alignCenter());
+        this.addRenderableWidget(new StringWidget(0, 15, this.width, 9, this.title, this.font));
 
         y = 40;
         toggle("enabled", c.enabled, v -> c.enabled = v);
@@ -50,6 +50,6 @@ public class MobCarryConfigScreen extends Screen {
     @Override
     public void onClose() {
         MobCarryConfig.save();
-        this.minecraft.setScreen(parent);
+        this.minecraft.setScreenAndShow(parent);
     }
 }
