@@ -51,7 +51,7 @@ public class MobCarry implements ModInitializer {
             mob.setNoAi(true);
             mob.setTarget(null);
             if (cfg.makePersistent) mob.setPersistenceRequired();
-            if (mob.startRiding(sp, true)) {
+            if (mob.startRiding(sp, true, true)) {
                 CARRIED.add(mob.getUUID());
                 sp.sendSystemMessage(Component.literal("Picked up mob. Sneak + right-click to drop"), true);
             } else {
