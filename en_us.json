@@ -1,0 +1,9 @@
+{
+  "mobcarry.config.title": "Mob Carry Settings",
+  "mobcarry.config.enabled": "Enabled",
+  "mobcarry.config.requireSneaking": "Require Sneaking",
+  "mobcarry.config.requireEmptyHand": "Require Empty Hand",
+  "mobcarry.config.allowPassiveMobs": "Allow Passive Mobs",
+  "mobcarry.config.makePersistent": "Prevent Despawning",
+  "mobcarry.config.protectFromSun": "Protect From Sun"
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "mobcarry",
+  "version": "${version}",
+  "name": "Mob Carry",
+  "description": "Pick up hostile mobs and carry them around. Great for iron farms.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.mobcarry.MobCarry"],
+    "modmenu": ["com.example.mobcarry.client.MobCarryModMenu"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "modmenu": "*"
+  }
+}
